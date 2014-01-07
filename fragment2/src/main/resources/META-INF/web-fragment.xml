@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-fragment
+	version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-fragment_3_0.xsd"
+	id="web-fragment">
+	<name>TestWebFragment</name>
+
+	<ejb-local-ref>
+		<ejb-ref-name>ejb/Bean2</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local-home>foo.bar.TestLocalHome</local-home>
+		<local>foo.bar.TestLocal</local>
+		<ejb-link>ejbjar.jar#TestBean</ejb-link>
+	</ejb-local-ref>
+	
+</web-fragment>

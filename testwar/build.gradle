@@ -1,0 +1,16 @@
+apply plugin: 'war'
+
+configurations {
+	fragments
+}
+
+dependencies {
+	fragments project(path: ':fragment', transitive: false)
+	fragments project(path: ':fragment2', transitive: false)
+}
+
+war {
+	classpath configurations.fragments
+	extension='war'
+}
+

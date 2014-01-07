@@ -1,0 +1,6 @@
+apply plugin: 'ear'
+
+dependencies {
+	deploy project(path: ":testwar", configuration: 'archives')
+	deploy project(path:":ejbjar", transitive: false)
+}
